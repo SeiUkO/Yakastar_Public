@@ -1,0 +1,6 @@
+# Yakastor
+
+Launch the server:
+ pipenv shell
+ pip install --requirement requirement.txt
+ ./manage.py runserver

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Views &#8212; Documentation Event 2019-06-26</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="Welcome to Event’s documentation!" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-event_site.views">
+<span id="views"></span><h1>Views<a class="headerlink" href="#module-event_site.views" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="class">
+<dt id="event_site.views.AssosDetail">
+<em class="property">class </em><code class="sig-prename descclassname">event_site.views.</code><code class="sig-name descname">AssosDetail</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.AssosDetail" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><dl class="method">
+<dt id="event_site.views.AssosDetail.get_context_data">
+<code class="sig-name descname">get_context_data</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.AssosDetail.get_context_data" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Insert the single object into the context dict.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="event_site.views.AssosDetail.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#event_site.views.AssosDetail.model" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>alias de <a class="reference internal" href="../event.html#event.models.Assos" title="event.models.Assos"><code class="xref py py-class docutils literal notranslate"><span class="pre">event.models.Assos</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="event_site.views.EventDetailView">
+<em class="property">class </em><code class="sig-prename descclassname">event_site.views.</code><code class="sig-name descname">EventDetailView</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.EventDetailView" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><dl class="method">
+<dt id="event_site.views.EventDetailView.get_context_data">
+<code class="sig-name descname">get_context_data</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.EventDetailView.get_context_data" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Insert the single object into the context dict.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="event_site.views.EventDetailView.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#event_site.views.EventDetailView.model" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>alias de <a class="reference internal" href="../event.html#event.models.Event" title="event.models.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">event.models.Event</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="event_site.views.GeneratePDF">
+<em class="property">class </em><code class="sig-prename descclassname">event_site.views.</code><code class="sig-name descname">GeneratePDF</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.GeneratePDF" title="Lien permanent vers cette définition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="event_site.views.searchListView">
+<em class="property">class </em><code class="sig-prename descclassname">event_site.views.</code><code class="sig-name descname">searchListView</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.searchListView" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><dl class="method">
+<dt id="event_site.views.searchListView.get_queryset">
+<code class="sig-name descname">get_queryset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#event_site.views.searchListView.get_queryset" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Return the list of items for this view.</p>
+<p>The return value must be an iterable and may be an instance of
+<cite>QuerySet</cite> in which case <cite>QuerySet</cite> specific behavior will be enabled.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Event</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Views</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="Chapitre précédent">Welcome to Event’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Tiphanie Huang, Victor Goutard, Nicolas Guinot, Paul Jnioui.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/modules/views.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

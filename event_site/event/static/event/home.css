@@ -1,0 +1,161 @@
+@font-face {
+
+    font-family: 'RalewayExtrabold'; /*a name to be used later*/
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans'); /*URL to font*/
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+p { font-family: 'Open Sans', "RalewayExtrabold", "Times New Roman", Times, sans-serif; }
+
+h2 { font-family: 'Open Sans', "RalewayExtrabold", "Times New Roman", Times, sans-serif; }
+
+
+header {
+    #display: table;
+    #display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    overflow: hidden;
+
+    #background-color: blueviolet;
+
+}
+
+.logout_link {
+    text-align: center;
+}
+
+.raw {
+    display: flex;
+    #display: table;
+    width: 100%;
+    height: 70px;
+    #margin: 0;
+    #padding: 0;
+}
+
+.left_header {
+    display: table-cell;
+    width: 25%;
+}
+
+.logo_img {
+    display: inline-block;
+    #display: table-cell;
+    width: auto;
+    height: 70px;
+    margin-right: 50px;
+    padding: 0;
+}
+.site-title {
+    display: inline-block;
+    #display: table-cell;
+    line-height: 70px;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    color: #232222;
+    font-size: 32px;
+
+    font-family: 'Open Sans', "RalewayExtrabold", "Times New Roman", Times, sans-serif;
+
+}
+
+
+
+.middle_header {
+    display: table-cell;
+    margin: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 50%;
+    /*background-color: blueviolet;*/
+
+}
+
+.content_title {
+    text-align: center;
+}
+
+ul.menup {
+    display: inline-block;
+    #display: table-cell;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    #width: 75%;
+    #overflow: hidden;
+    background-color: #00435f;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    #line-height: 70px;
+    #padding: 0px 16px;
+    #float: left;
+    #vertical-align: middle;
+}
+
+li a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: 'Open Sans', "RalewayExtrabold", "Times New Roman", Times, sans-serif;
+}
+
+
+.right_header {
+    width: 25%;
+}
+
+.row {
+    display: table;
+    width: 100%;
+    #background-color: blue;
+}
+
+.column {
+    #float: left;
+    display: table-cell;
+    padding: 10px;
+    height: 1000px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    background-color: #00435f;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}

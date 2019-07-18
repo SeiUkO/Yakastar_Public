@@ -1,0 +1,43 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #00435f;
+    font-family: 'Open Sans', "RalewayExtrabold", "Times New Roman", Times, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    color: #232222;
+
+}
+
+/*.menup {
+    margin: auto 0;
+    width: 500px;
+    height: 300px;
+    background-color: #00435f;
+}*/
+
+.menu_title {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.menup {
+    position: relative;
+    top: 20%;
+    left: 38%;
+    margin: 0;
+    border: 3px  solid #0d2436;
+    width: 400px;
+    height: 100px;
+    background-color: #9dc8ec;
+
+}
+
+.connect_link {
+    margin-left: 3px;
+    text-align: center;
+}

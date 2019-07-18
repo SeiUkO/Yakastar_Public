@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'event/connect.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
+    <title>Connection</title>
+</head>
+<body>
+<div class="container">
+    <div class="menup">
+        <div class="menu_title">
+            <h3 >EPITA CRI - Login</h3>
+            <a href=" {% url 'social:begin' backend='epita' %}">Connexion</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'event/home.css' %}">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"#}
+        {#          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">#}
+        <title>Home</title>
+        {#    <div align="right">#}
+        {##}
+        {#    </div>#}
+    </head>
+
+</head>
+<body>
+<header>
+    <div class="raw">
+        <div class="left_header">
+            <a href="{% url 'logged' %}">
+            <img src="{% static 'event/logo.png' %}" alt="Logo EPITA" class="logo_img">
+            </a>
+            <h1 class="site-title">Événements EPITA</h1>
+        </div>
+        <div class="middle_header">
+            <ul class="menup">
+                <li><a href="{% url 'event' %}">Création d'un formulaire</a></li>
+                <li><a href="{% url 'assos' %}">Associations</a></li>
+                <li><a href="{% url 'membres' %}">Membres</a></li>
+                <li><a href="{% url 'forms' %}">Liste des Events</a></li>
+                <li><a href="{% url 'profile' %}">Mon Profil</a></li>
+                <li><a href="{% url 'events' %}">Formulaires</a></li>
+            </ul>
+        </div>
+        <div class="right_header">
+            <div class="logout_link">
+                <p><a href="{% url 'logout' %}">Logout</a></p>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="row">
+    <div class="column side">
+        <p>
+        </p>
+    </div>
+    <div class="column middle">
+        <h2 class="content_title">Membres</h2>
+          {% block content %}
+                {% for user in allusers %}
+                    <h4>{{user.lastname}} {{user.firstname}}</h4>
+                    Login : {{user.login}}<br>
+                    Mail : {{user.email}}<br><br><br>
+                {% endfor %}
+          {% endblock %}
+    </div>
+    <div class="column side">
+        <form class="form-inline my-2 my-lg-1">
+            <input
+                    class="form-control mr-sm-2"
+            type="search"
+            placeholder="rechercher"
+            arial-label="Search"
+            name='search'>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+        </form>
+    </div>
+</div>
+    </body>
+</html>
+

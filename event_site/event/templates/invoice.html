@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Title</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 20px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'>Fiche Event n° {{ form.pk }}</p>
+            </div>
+        </div>
+            Organisé par l'association: {{ form.assos.name }}<br>
+            Nom de l'Event: {{ form.name }} <br>
+            Date de l'Event: {{ form.date_time }}<br>
+            Horaires De {{ form.begin_time }}  à  {{ form.end_time }}<br>
+            Récurrence {% if form.recurrence %} Oui {% else %} Non {% endif %} Fréquence (jours): {{ form.frequence }} - Jusqu'au: {{ form.until }} <br>
+            Responsable sur place: {{ form.responsible }}      Tél: {{ form.responsible_phone }} Classe: {{ form.responsible_class }} <br>
+            Tuteur: {{ form.tutor_name }} Tél: {{ form.tutor_phone }} Poste/Ecole: {{ form.tutor_job }} <br>
+            Nombre personnes attendues Ionis: {{ form.nb_ionis_student }}   Membres: {{ form.nb_members }}   Externes: {{ form.nb_externs }} <br>
+            Description de l'Event: {{ form.description }} <br>
+            Avez vous une assurance responsabilité civile: {% if form.civil_liablility %} Oui {% else %} Non {% endif %} <br>
+            Le site: {{ form.place }} <br>
+            Salle(s) prévue(s): {{ form.rooms }} <br>
+            Liste du matériel présent: {{ form.material }}<br>
+            Boisson(s) prévue(s): {{ form.drinks }}<br>
+            Remarques spéciales concernant l'Event: {{ form.comment }} <br>
+            <hr class='hrItem' />
+        </div>
+    </body>
+</html>
